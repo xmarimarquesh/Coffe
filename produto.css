@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Italianno&family=Josefin+Slab&display=swap');
+
+
+body {
+    font-family: 'Josefin Slab', serif;
+    background-size: cover;
+    background: transparent;
+    width: 100%;
+    height: 100VH;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.shadow {
+    margin-top: 3%;
+}
+
+#slide {
+    width: 100%;
+}
+
+#corpo {
+    width: 100%;
+    position: relative;
+}
+
+#container {
+    color: black;
+    border-radius: 50px 50px 0 0;
+    margin-top: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-card .card {
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.product-card .card-title,
+.product-card .card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.produto {
+    position: relative;
+    top: -45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container h1 {
+    -webkit-text-stroke-width: 2px;
+    /* largura da borda */
+    -webkit-text-stroke-color: #7C573E;
+    /* cor da borda */
+    color: white;
+    font-family: 'Galada', cursive;
+    font-size: 5em;
+    text-shadow: 0.05em 0.05em 0em #7C573E,
+        0.10em 0.10em 0em #FFFFFF;
+}
+
+
+#prod-cafe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.product img {
+    width: 50%;
+    height: auto;
+}
+
+.product button {
+    width: 120px;
+    height: auto;
+    border-radius: 30px;
+    background-color: #00643C;
+    color: white;
+}
+
+.product p,
+.product h3 {
+    color: rgb(59, 54, 45);
+}
+
+.product h3 {
+    font-size: 1.7em;
+    text-shadow: 0.05em 0.05em 0.05em #333;
+}
+
+.cinza {
+    background-color: rgb(196, 133, 78);
+}
+
+.cinza {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 20px 20px 0px 20px;
+    padding: 25px;
+    background-color: rgba(205, 96, 24, 0.296);
+}
+
+.cinza img {
+    width: 200px;
+    height: auto;
+}
+
+.card-body h2 {
+    color: #7C573E;
+}
+
+.preco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.confira {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-secondary {
+    --bs-btn-color: #7C573E !important;
+    --bs-btn-bg: #fff !important;
+    --bs-btn-border-color: #7C573E !important;
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-bg: #3b2516 !important;
+    --bs-btn-hover-border-color: #3b2516 !important;
+    --bs-btn-active-bg: rgba(193, 113, 81, 0.696) !important;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff !important;
+    --bs-btn-bg: #7C573E !important;
+    --bs-btn-border-color: #7C573E !important;
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-bg: #3b2516 !important;
+    --bs-btn-hover-border-color: #3b2516 !important;
+    --bs-btn-active-bg: rgba(193, 113, 81, 0.696) !important;
+}
+
+.box-search {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.box-search #pesquisar {
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.box-search button {
+    border-radius: 30%;
+    background-color: #9f7a61;
+}
+
+.shadow-sm {
+    --bs-box-shadow-sm: 0.1rem 0.1rem 0rem rgb(124 87 62);
+}
+
+;
+
+.card-body {
+    padding: 0;
+}
+
+.cafe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.cafe h2 {
+    color: #7C573E;
+    font-size: 4em;
+    margin-top: 5%;
+}
+
+.flores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0 2% 0 !important;
+}
+
+.flores h2 {
+    color: #7C573E;
+    font-size: 4em;
+}
+
+.shadow-sm {
+    --bs-box-shadow-sm: 0.1rem 0.1rem 0rem rgb(124 87 62);
+}
+
+;
+
+.card-body {
+    padding: 0;
+}
+
+.texts {
+    height: 60rem;
+}
+
+.destaque {
+    color: gold; /* ou qualquer outra cor desejada para a estrelinha */
+    font-size: 20px; /* ajuste o tamanho conforme necessário */
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário para posicionar a estrela */
+    left: 8px; /* Ajuste conforme necessário para posicionar a estrela */
+    color: gold; /* ou qualquer outra cor desejada para a estrelinha */
+    font-size: 20px; 
+}
+
+
+
+@media screen and (min-width: 768px) {
+    #prod-cafe {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin: 0 auto;
+    }
+
+    .product {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+}

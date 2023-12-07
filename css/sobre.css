@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Italianno&family=Josefin+Slab&display=swap');
+
+
+body{
+    font-family: 'Josefin Slab', serif;
+    background-size: cover;
+    background: transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.texto p{
+    color: black;
+}
+
+#slide{
+    width: 100%;
+}
+
+#corpo {
+    width: 100%;
+    position: relative;
+}
+  
+#container {
+    border-radius: 50px 50px 0 0;
+    margin-top: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.sobre{
+    position: relative;
+    top: -45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sobre h1{
+    -webkit-text-stroke: 2px #7C573E;
+    color: white;
+    font-family: 'Galada', cursive;
+    font-size: 5em;
+    text-shadow: 0.05em 0.05em 0em #7C573E,
+    0.1em 0.1em 0em #ffffff;
+}
+
+
+
+.product p, .product h3 {
+    color: rgb(59, 54, 45);
+}
+
+.product h3 {
+    font-size: 1.7em;
+    text-shadow: 0.05em 0.05em 0.05em #333;
+}
+
+.telas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+#telas2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5%;
+}
+
+#texto2{
+    margin-left: 3%;
+}
+
+.texto{
+    max-width: 40%;
+    margin-right: 30px;
+    font-size: 1.5em;
+}
+
+.img{
+    max-width: 50%;
+}
+
+.img #imagem{
+    border-radius: 35px !important;
+    border: 5px solid #7C573E !important;
+    width: 450px !important;
+    height: auto !important;
+}
+
+.rodape{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+@media (max-width: 500px) {
+    .img #imagem{
+        width: 0% !important;
+        height: auto !important;
+        border: none !important;
+    }
+
+    .texto{
+        max-width: 100% !important;
+        margin: 0 0 0 2%;
+    }
+  }

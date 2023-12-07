@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Italianno&family=Josefin+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+
+* {
+  font-family: 'Josefin Slab', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2%;
+  width: 100%;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+#oi {
+  display: flex;
+  align-items: center;
+  margin: 1%;
+  justify-content: space-between;
+}
+
+.oi {
+  margin: 2%;
+}
+
+#oi p {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para o formulário */
+form {
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Estilos para os rótulos (labels) */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-top: 2%;
+}
+
+/* Estilos para as caixas de entrada (inputs) */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #4a321e;
+  border-radius: 5px;
+}
+
+/* Estilos para o botão de envio */
+input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #775136;
+  color: #fff;
+  border: 2px solid #775136;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+
+input[type="submit"]:hover {
+  background-color: #b48767;
+  color: #fff;
+  border: 2px solid #b48767;
+}
+
+.add {
+  display: flex;
+}
+
+.ad {
+  background-color: #775136;
+  text-decoration: none;
+  color: white;
+  padding: 4px;
+  margin: 3px;
+}
+
+.ad:hover {
+  background-color: #b48767;
+}
+
+select {
+
+  width: 200px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Estilo para as opções */
+option {
+  padding: 5px;
+}
+
+
+/* Estilo para quando o select está focado */
+select:focus {
+  border-color: #007bff;
+}
+
+/* Estilo para o container do input de arquivo */
+.upload-container {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+
+/* Estilo para o input de arquivo oculto */
+#ft input[type="file"] {
+  background-color: #ccc;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+
+}
+
+
+
+/* Estilo para o botão de escolha de arquivo */
+#ft {
+  background-color: #ffffff;
+  color: #3c2d1f;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Estilo para a tabela */
+.tabela-produtos {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 1280px;
+}
+
+/* Estilo para o cabeçalho da tabela (thead) */
+.tabela-produtos th {
+  background-color: #775136;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilo para as células de dados (tbody) */
+.tabela-produtos td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Estilo para linhas ímpares */
+.tabela-produtos tbody tr:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+
+/* Estilo para o texto da coluna "Caminho da Imagem" */
+.tabela-produtos td:nth-child(5) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  /* Ajuste o valor conforme necessário */
+}
+
+/* Estilo para a imagem na coluna "Caminho da Imagem" (se aplicável) */
+.tabela-produtos td:nth-child(5) img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cep-tab {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cep-header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cep-header span {
+  margin-left: 10px;
+}
+
+.toggle-icon {
+  margin-left: auto;
+}
+
+.cep-content {
+  display: none;
+}
+
+/* Estilo da aba quando aberta */
+.cep-tab.open .cep-content {
+  display: block;
+}
+
+
+#adc {
+  width: 180px;
+  height: 30px;
+  background-color: #775136;
+  color: white;
+  border-radius: 8%;
+}
+
+i {
+  color: #3c2d1f;
+}
+
+/* Ocultar inicialmente o formulário */
+
+
+#updateProduct-form {
+  background-color: #dab79e;
+  padding: 7%;
+  border-radius: 3%;
+  width: 257.325px;
+}
+
+#create-form {
+  display: none;
+  background-color: #dab79e;
+  padding: 7%;
+  border-radius: 3%;
+
+}
+
+#create-form input[type="submit"] {
+  margin-top: 4%;
+  }
+
+#formularios {
+  display: flex;
+}
+
+select {
+  width: 100%;
+}
+
+h1 {
+  max-width: 100%;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4%;
+}
+
+#esc {
+  float: right;
+  /* Adiciona o float à esquerda */
+  margin-right: 10px;
+  /* Adiciona um espaçamento à direita para evitar sobreposição com outros elementos */
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #775136;
+  color: #fff;
+  border: 2px solid #775136;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+#esc:hover {
+  background-color: #b48767;
+  color: #fff;
+  border: 2px solid #b48767;
+}

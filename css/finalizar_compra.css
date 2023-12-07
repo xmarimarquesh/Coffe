@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff7f2;
+    padding: 30px;
+    flex-direction: column;
+}
+
+form {
+    width: 40%;
+    height: auto;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    padding: 3%;
+    border-radius: 2%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.info{
+    background-color: rgba(205, 96, 24, 0.296);
+    box-shadow: 0 4px 3px 0px rgba(0,0,0,0.2);
+    border-radius: 2%;
+    padding: 2%;
+    margin: 5%;
+}
+.info h2, p {
+    display: flex;
+    margin: 3%;
+}
+
+.info h2{
+    font-size: 1.3em;
+}
+
+form h1 {
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+
+
+form input {
+    margin: 3% 3%;
+    height: 100%;
+    width: 93%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    /* Ajuste o preenchimento interno conforme necessário */
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+form input:focus{
+    border-color: #7C573E;
+}
+
+form label,
+button {
+    margin: 3% 3%;
+    padding: 5px;
+}
+
+form button {
+    width: 93%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background: #7C573E;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: none;
+}
+
+form button:hover {
+    background: #7e5a43ea;
+}
+
+form a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+}
+
+/* Estilizando o contêiner do select */
+form {
+    position: relative;
+}
+
+/* Estilizando o select */
+form select {
+    width: 93%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; /* Remove o estilo padrão do navegador */
+    margin-bottom: 0;
+    margin: 0 3%;
+}
+
+/* Adicionando uma seta personalizada usando um pseudo-elemento */
+form select::after {
+    content: '\25BC'; /* Unicode para uma seta para baixo */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* Estilizando as opções do select (opcional) */
+form select option {
+    background-color: #fff;
+    color: #333;
+}
+
+#detalhes-pedido{
+    background-color: rgba(205, 96, 24, 0.296);
+    padding: 1%;
+    border-radius: 2%;
+    margin: 2%;
+    text-decoration: none;
+}
